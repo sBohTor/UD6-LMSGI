@@ -14,6 +14,7 @@
         <th>ISBN</th>
         <th>Número de Páginas</th>
         <th>Autores</th>
+        
       </tr>
       <xsl:for-each select="Libros/libro">
       <tr>
@@ -23,6 +24,7 @@
         <td><xsl:value-of select="Edicion"/></td>
         <td><xsl:value-of select="ISBN"/></td>
         <td><xsl:value-of select="NumPaginas"/></td>
+
         <td>
           <xsl:for-each select="Autores/autor">
             <xsl:value-of select="Nombre"/> <xsl:value-of select="Apellidos"/>, <xsl:value-of select="Nacionalidad"/><br/>
